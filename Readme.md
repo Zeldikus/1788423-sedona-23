@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Риан Асаинов](https://up.htmlacademy.ru/adaptive/23/user/1788423).
-* Наставник: [Евгений Петров](https://github.com/LeMarck).
+* Наставник: [Евгений Петров](https://htmlacademy.ru/profile/id617077).
 
 ---
 
