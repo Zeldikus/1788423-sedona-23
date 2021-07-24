@@ -1,12 +1,153 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a class="page-heder__logo">
+      <img class="page-heder__logo-image" src="img/logotype-mobile.svg.svg" width="101,7px" height="84px"
+        alt="Логотип-Седона">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">
+              Фото И Видео
+            </a>
+          </li>
+          <li class="main-nav__item site-list__item--active">
+            <a href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="greetings">
+      <img src="#" alt="Приветствие сайта Седона">
+      <h2 class="greetings-title">Оставьте свой отзыв</h2>
+      <p class="greetings-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+        достопримечательностях</p>
+    </section>
+    <section class="personal-info">
+      <form action="#" method="POST" enctype="text/plain">
+        <fieldset class="personal-name__form">
+          <legend>Представьтесь:</legend>
+          <label>
+            <span class="form-fio">ИМЯ*:</span>
+            <input type="text" name="ФИО" value="Пётр" required>
+          </label>
+          <label>
+            <span class="form-fio">ФАМИЛИЯ*:</span>
+            <input type="text" name="ФИО" value="Иванов" required>
+          </label>
+          <label>
+            <span class="form-fio">Отчество::</span>
+            <input type="text" name="ФИО" value="Александрович">
+          </label>
+        </fieldset>
+        <fieldset class="personal-social__form">
+          <legend>Контактная информация:</legend>
+          <label>
+            <span>Контактный телефон*:</span>
+            <input type="tel" name="social-info" value="Введите телефон" required>
+            <img src="#" alt="трубка">
+          </label>
+          <label>
+            <span>Электронная почта*:</span>
+            <input type="email" name="social-info" value="Введите e-mail" required>
+            <img src="#" alt="почта">
+          </label>
+        </fieldset>
+        <fieldset class="personal-impressions__form">
+          <legend>ВАше Общее впечатление:</legend>
+          <label>
+            <input type="radio" name="impressions" value="impressions" checked>
+            <span>Скорее положительное</span>
+          </label>
+          <label>
+            <input type="radio" name="impressions" value="impressions">
+            <span>Скорее отрицательное</span>
+          </label>
+          <label>
+            <input type="radio" name="impressions" value="impressions">
+            <span>Затрудняюсь ответить</span>
+          </label>
+        </fieldset>
+        <fieldset class="attraction">
+          <legend>посещенные достопримечательности:</legend>
+          <label>
+            <input type="checkbox" name="attraction" value="attraction" checked>
+            <span>Мост Дьявола</span>
+          </label>
+          <label>
+            <input type="checkbox" name="attraction" value="attraction" checked>
+            <span>Гора-Колокол</span>
+          </label>
+          <label>
+            <input type="checkbox" name="attraction" value="attraction" checked>
+            <span>Слайд-парк</span>
+          </label>
+          <label>
+            <input type="checkbox" name="attraction" value="attraction">
+            <span>Красные скалы</span>
+          </label>
+        </fieldset>
+        <fieldset class="personal-opinion">
+          <legend>Опишите свои эмоции:</legend>
+          <label>
+            <input type="text" name="opinion" value="Опишите подробно все свои восторги">
+          </label>
+        </fieldset>
+        <button type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <a class="contacts-site">#visitSEDONA</a>
+      </div>
+      <div class="page-footer__social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в Твитере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="№">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
