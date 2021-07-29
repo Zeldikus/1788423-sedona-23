@@ -12,8 +12,8 @@
       <img class="page-heder__logo-image" src="img/logotype-mobile.svg.svg" width="101,7px" height="84px"
         alt="Логотип-Седона">
     </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -28,7 +28,7 @@
               Фото И Видео
             </a>
           </li>
-          <li class="main-nav__item site-list__item--active">
+          <li class="main-nav__item main-nav__item--active">
             <a href="form.html">
               Форма отзыва
             </a>
@@ -45,81 +45,81 @@
   <main class="page-main">
     <section class="greetings">
       <img src="#" alt="Приветствие сайта Седона">
-      <h2 class="greetings-title">Оставьте свой отзыв</h2>
-      <p class="greetings-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+      <h2 class="greetings__title">Оставьте свой отзыв</h2>
+      <p class="greetings__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
     </section>
     <section class="personal-info">
-      <form action="#" method="POST" enctype="text/plain">
-        <fieldset class="personal-name__form">
-          <legend>Представьтесь:</legend>
+      <form class="main-form" action="#" method="POST" enctype="text/plain">
+        <fieldset class="personal-info__form">
+          <legend class="personal-info__title">Представьтесь:</legend>
           <label>
-            <span class="form-fio">ИМЯ*:</span>
-            <input type="text" name="ФИО" value="Пётр"  required> <!-- Я думаю лучше через placeholder -->
+            <span class="personal-info__clue">ИМЯ*:</span>
+            <input class="personal-info__field" type="text" name="ФИО" value="Пётр"  required> <!-- Я думаю лучше через placeholder -->
           </label>
           <label>
-            <span class="form-fio">ФАМИЛИЯ*:</span>
-            <input type="text" name="ФИО" value="Иванов" required>
+            <span class="personal-info__clue">ФАМИЛИЯ*:</span>
+            <input class="personal-info__field" type="text" name="ФИО" value="Иванов" required>
           </label>
           <label>
-            <span class="form-fio">Отчество::</span>
-            <input type="text" name="ФИО" value="Александрович">
+            <span class="personal-info__clue">Отчество::</span>
+            <input class="personal-info__field" type="text" name="ФИО" value="Александрович">
           </label>
         </fieldset>
         <fieldset class="personal-social__form">
-          <legend>Контактная информация:</legend>
+          <legend class="personal-social__title">Контактная информация:</legend>
           <label>
-            <span>Контактный телефон*:</span>
-            <input type="tel" name="social-info" value="Введите телефон" required>
+            <span class="personal-social__clue">Контактный телефон*:</span>
+            <input class="personal-social__field" type="tel" name="social-info" value="Введите телефон" required>
             <img src="#" alt="трубка">
           </label>
           <label>
-            <span>Электронная почта*:</span>
-            <input type="email" name="social-info" value="Введите e-mail" required>
+            <span class="personal-social__clue">Электронная почта*:</span>
+            <input class="personal-social__field" type="email" name="social-info" value="Введите e-mail" required>
             <img src="#" alt="почта">
           </label>
         </fieldset>
         <fieldset class="personal-impressions__form">
-          <legend>ВАше Общее впечатление:</legend>
+          <legend class="personal-impressions__title">ВАше Общее впечатление:</legend>
           <label>
-            <input type="radio" name="impressions" value="impressions" checked>
-            <span>Скорее положительное</span>
+            <input class="personal-impressions__radio" type="radio" name="impressions" value="impressions" checked>
+            <span class="personal-impressions__text">Скорее положительное</span>
           </label>
           <label>
-            <input type="radio" name="impressions" value="impressions">
-            <span>Скорее отрицательное</span>
+            <input class="personal-impressions__radio" type="radio" name="impressions" value="impressions">
+            <span class="personal-impressions__text">Скорее отрицательное</span>
           </label>
           <label>
-            <input type="radio" name="impressions" value="impressions">
-            <span>Затрудняюсь ответить</span>
+            <input class="personal-impressions__radio" type="radio" name="impressions" value="impressions">
+            <span class="personal-impressions__text">Затрудняюсь ответить</span>
           </label>
         </fieldset>
         <fieldset class="attraction">
-          <legend>посещенные достопримечательности:</legend>
+          <legend class="attraction__title">посещенные достопримечательности:</legend>
           <label>
-            <input type="checkbox" name="attraction" value="attraction" checked>
-            <span>Мост Дьявола</span>
+            <input class="attraction__box" type="checkbox" name="attraction" value="attraction" checked>
+            <span class="attraction__text">Мост Дьявола</span>
           </label>
           <label>
-            <input type="checkbox" name="attraction" value="attraction" checked>
-            <span>Гора-Колокол</span>
+            <input class="attraction__box" type="checkbox" name="attraction" value="attraction" checked>
+            <span class="attraction__text">Гора-Колокол</span>
           </label>
           <label>
-            <input type="checkbox" name="attraction" value="attraction" checked>
-            <span>Слайд-парк</span>
+            <input class="attraction__box"class="attraction__box" type="checkbox" name="attraction" value="attraction" checked>
+            <span class="attraction__text">Слайд-парк</span>
           </label>
           <label>
-            <input type="checkbox" name="attraction" value="attraction">
-            <span>Красные скалы</span>
+            <input class="attraction__box" type="checkbox" name="attraction" value="attraction">
+            <span class="attraction__text">Красные скалы</span>
           </label>
         </fieldset>
         <fieldset class="personal-opinion">
-          <legend>Опишите свои эмоции:</legend>
+          <legend class="personal-opinion__title">Опишите свои эмоции:</legend>
           <label>
-            <input type="text" name="opinion" value="Опишите подробно все свои восторги">
+            <input class="personal-opinion__form-opinion" type="text" name="opinion" value="Опишите подробно все свои восторги">
           </label>
         </fieldset>
-        <button type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        <button class="main-form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
       </form>
     </section>
   </main>
@@ -128,16 +128,16 @@
       <div class="page-footer__contacts contacts">
         <a class="contacts-site">#visitSEDONA</a>
       </div>
-      <div class="page-footer__social">
+      <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в Твитере</a>
+            <a class="social__link social__link-twitter" href="#">Мы в Твитере</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="№">Мы в Фейсбуке</a>
+            <a class="social__link social__link-facebook" href="№">Мы в Фейсбуке</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+            <a class="social__link social__link-youtube" href="#">Мы в Ютубе</a>
           </li>
         </ul>
       </div>

@@ -1,12 +1,112 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a class="page-heder__logo">
+      <img class="page-heder__logo-image" src="img/logotype-mobile.svg.svg" width="101,7px" height="84px"
+        alt="Логотип-Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a href="catalog.html">
+              Фото И Видео
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <img class="page-main__image" src="#">
+    <h2 class="page-main__title">Фото и видео</h2>
+    <p class="page-main__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
+      экономике.</p>
+    <section class="photos">
+      <div class="border">
+        <img class="photos__img" src="#">
+        <h3 class="photos__name">неродные просторы</h3>
+        <p class="photos__autor">Автор фото: Борис</p>
+        <img class="photos__like" src="#">
+        <span>1350</span>
+      </div>
+      <div class="border">
+        <img class="photos__img" src="#">
+        <h3 class="photos__name">местна ростительность</h3>
+        <p class="photos__autor">Автор фото: Сергей</p>
+        <img class="photos__like" src="#">
+        <span>143</span>
+      </div>
+      <div class="border">
+        <img class="photos__img" src="#">
+        <h3 class="photos__name">Дорога на север</h3>
+        <p class="photos__autor">Автор фото: Петр</p>
+        <img class="photos__like" src="#">
+        <span>96</span>
+      </div>
+      <div class="border">
+        <img class="photos__img" src="#">
+        <h3 class="photos__name">Мост Дьявола</h3>
+        <p class="photos__autor">Автор фото: Антон</p>
+        <img class="photos__like" src="#">
+        <span>254</span>
+      </div>
+    </section>
+    <section class="video">
+      <h2 class="video__title">Все еще сомневаетесь?</h2>
+      <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <video class="clip" src="#"></video>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <a class="contacts-site">#visitSEDONA</a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link-twitter" href="#">Мы в Твитере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link-facebook" href="№">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link-youtube" href="#">Мы в Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
