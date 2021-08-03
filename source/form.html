@@ -50,8 +50,8 @@
         достопримечательностях</p>
     </section>
     <section class="personal-info">
-      <form class="main-form" action="#" method="POST" enctype="text/plain">
-        <fieldset class="personal-info__form">
+      <form class="personal-info__form" action="#" method="POST" enctype="text/plain">
+        <fieldset class="personal-info__fieldset">
           <legend class="personal-info__title">Представьтесь:</legend>
           <label>
             <span class="personal-info__clue">ИМЯ*:</span>
@@ -66,60 +66,60 @@
             <input class="personal-info__field" type="text" name="name-3" value="Александрович">
           </label>
         </fieldset>
-        <fieldset class="personal-social__form">
-          <legend class="personal-social__title">Контактная информация:</legend>
+        <fieldset class="personal-info__fieldset">
+          <legend class="personal-info__title">Контактная информация:</legend>
           <label>
-            <span class="personal-social__clue">Контактный телефон*:</span>
-            <input class="personal-social__field" type="tel" name="social-phone" value="Введите телефон" required>
+            <span class="personal-info__clue">Контактный телефон*:</span>
+            <input class="personal-info__field" type="tel" name="social-phone" value="Введите телефон" required>
             <img src="#" alt="трубка">
           </label>
           <label>
-            <span class="personal-social__clue">Электронная почта*:</span>
-            <input class="personal-social__field" type="email" name="social-email" value="Введите e-mail" required>
+            <span class="personal-info__clue">Электронная почта*:</span>
+            <input class="personal-info__field" type="email" name="social-email" value="Введите e-mail" required>
             <img src="#" alt="почта">
           </label>
         </fieldset>
-        <fieldset class="personal-impressions__form">
-          <legend class="personal-impressions__title">ВАше Общее впечатление:</legend>
+        <fieldset class="personal-info__fieldset">
+          <legend class="personal-info__title">ВАше Общее впечатление:</legend>
           <label>
-            <input class="personal-impressions__radio" type="radio" name="impressions" value="impressions" checked>
-            <span class="personal-impressions__text">Скорее положительное</span>
+            <input class="personal-info__radio" type="radio" name="impressions" value="impressions" checked>
+            <span class="personal-info__text">Скорее положительное</span>
           </label>
           <label>
-            <input class="personal-impressions__radio" type="radio" name="impressions" value="impressions">
-            <span class="personal-impressions__text">Скорее отрицательное</span>
+            <input class="personal-info__radio" type="radio" name="impressions" value="impressions">
+            <span class="personal-info__text">Скорее отрицательное</span>
           </label>
           <label>
-            <input class="personal-impressions__radio" type="radio" name="impressions" value="impressions">
-            <span class="personal-impressions__text">Затрудняюсь ответить</span>
-          </label>
-        </fieldset>
-        <fieldset class="attraction">
-          <legend class="attraction__title">посещенные достопримечательности:</legend>
-          <label>
-            <input class="attraction__box" type="checkbox" name="attraction" value="attraction" checked>
-            <span class="attraction__text">Мост Дьявола</span>
-          </label>
-          <label>
-            <input class="attraction__box" type="checkbox" name="attraction" value="attraction" checked>
-            <span class="attraction__text">Гора-Колокол</span>
-          </label>
-          <label>
-            <input class="attraction__box" type="checkbox" name="attraction" value="attraction" checked>
-            <span class="attraction__text">Слайд-парк</span>
-          </label>
-          <label>
-            <input class="attraction__box" type="checkbox" name="attraction" value="attraction">
-            <span class="attraction__text">Красные скалы</span>
+            <input class="personal-info__radio" type="radio" name="impressions" value="impressions">
+            <span class="personal-info__text">Затрудняюсь ответить</span>
           </label>
         </fieldset>
-        <fieldset class="personal-opinion">
-          <legend class="personal-opinion__title">Опишите свои эмоции:</legend>
+        <fieldset class="personal-info__fieldset">
+          <legend class="personal-info__title">посещенные достопримечательности:</legend>
           <label>
-            <input class="personal-opinion__form-opinion" type="text" name="opinion" value="Опишите подробно все свои восторги">
+            <input class="personal-info__box" type="checkbox" name="attraction" value="attraction" checked>
+            <span class="personal-info__text">Мост Дьявола</span>
+          </label>
+          <label>
+            <input class="personal-info__box" type="checkbox" name="attraction" value="attraction" checked>
+            <span class="personal-info__text">Гора-Колокол</span>
+          </label>
+          <label>
+            <input class="personal-info__box" type="checkbox" name="attraction" value="attraction" checked>
+            <span class="personal-info__text">Слайд-парк</span>
+          </label>
+          <label>
+            <input class="personal-info__box" type="checkbox" name="attraction" value="attraction">
+            <span class="personal-info__text">Красные скалы</span>
           </label>
         </fieldset>
-        <button class="main-form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        <fieldset class="personal-info__fieldset">
+          <legend class="personal-info__title">Опишите свои эмоции:</legend>
+          <label>
+            <input class="personal-info__form-opinion" type="text" name="opinion" value="Опишите подробно все свои восторги">
+          </label>
+        </fieldset>
+        <button class="personal-info__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
       </form>
     </section>
   </main>
